@@ -12,7 +12,7 @@ def logged_in_as_student?
 ```
 A sessions controller determines if a user has logged in successfully and what type of user they are. This helps filter out what users should see in other controllers.
 
-Explore this app on <a href="glacial-dusk-60771.herokuapp.com">Heroku</a>.
+Explore this Gradebook app on <a href="https://rocky-ridge-26298.herokuapp.com/login">Heroku</a>.
 
 ## Estimate: 1-5 scale
 Day 1
@@ -29,3 +29,5 @@ Beef up controllers to better filter what users see: 3
 
 **Reflection**<br>
 Since the second day Gradebook had already built-in, it felt a bit like legacy code. I spent an hour or two picking apart what was already there, understanding what it does and what was left to do. After that I spent 3 hours picking at the controllers and ultimately getting a lot of help to dig through the params correctly.
+
+I decided to deploy to Heroku for practice. I'm getting better at anticipating what sorts of things my Gemfile needs and how to overcome `bundle install` obstacles faster. I'm establishing more of a workflow like when creaing a repo on Github. 
