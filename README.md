@@ -21,11 +21,11 @@ Create models and controllers. Adjust Gemfile; migrations: 1 <br>
 Forms, redirections, views. Adjust controllers: 2
 TDD: 1.5 (if I get there)
 
-**Reflection**
+**Reflection**<br>
 I find that I'm on track with my estimation around the first or second step. Things get fuzzy and I don't keep track of my pace as the tasks get complicated.
 
 Day 2
 Beef up controllers to better filter what users see: 3
 
-**Reflection**
-Since the second day Gradebook had already built-in, it felt a bit like legacy code. I spent an hour or two picking apart what was already there, and what was left to do. After that I spent 3 hours picking at the controllers and ultimately getting a lot of help to dig through the params correctly.
+**Reflection**<br>
+Since the second day Gradebook had already built-in, it felt a bit like legacy code. I spent an hour or two picking apart what was already there, understanding what it does and what was left to do. After that I spent 3 hours picking at the controllers and ultimately getting a lot of help to dig through the params correctly.
