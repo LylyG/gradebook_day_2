@@ -1,9 +1,19 @@
 class GradesController < ApplicationController
   before_action :set_grade, only: [:show, :edit, :update, :destroy]
   before_action :logged_in?
+  before_action :logged_in_as_teacher?
 
   # GET /grades
   def index
+  user_id = session[:user_id]
+  if session[:user_type] = "Student"
+    @grades = Grade.where(student_id: user_id)
+
+  elsif session[:user_type] = "Parent"
+    parent = Parent.find(user_id)
+    @grades = Grade.where(student_id: parent.student_id)
+
+  else session[:user_type] = "Teacher"
     @grades = Grade.all
   end
 
@@ -56,4 +66,5 @@ class GradesController < ApplicationController
     def grade_params
       params.require(:grade).permit(:assignment_name, :grade, :student_id)
     end
+  end
 end
